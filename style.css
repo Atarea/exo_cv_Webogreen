@@ -1,0 +1,171 @@
+/*Ici vient votre code CSS*/
+@font-face {
+	font-family: 'open_sansregular';
+	src: url('fonts/OpenSans-Regular-webfont.eot');
+    src: url('fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	font-family: 'open_sansregular', Arial;
+	padding: 0;
+	margin: 0;
+}
+
+nav a{
+	text-decoration: none;
+	color: white;
+}
+
+.navigation{
+	background-color: rgba(228, 77, 38, 1);
+	height: 70px;
+	width: 100%;
+	padding-left: 10px;
+	color: white;
+	position: fixed;
+	align-items: center;
+	display: flex;
+}
+
+.boutonmenu{
+	padding: 10px;
+	margin-right: 15px;
+	border-radius: 9px;
+}
+
+.boutonmenu:hover{
+	background-color: white;
+	text-decoration: none;
+	color: rgba(228, 77, 38, 1);
+}
+.boutonmenu2{
+	font-size: 1.2em;
+	padding: 10px;
+	margin-right: 15px;
+	border: 2px solid white;
+	border-radius: 9px;
+}
+
+section{
+	padding: 30px;
+	min-height: 700px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.accueil{
+	background-image: url(img/cv-bg-3.jpg);
+}
+
+.formation{
+	background-image: url(img/cv-bg-1.jpg);
+}
+
+.travaux{
+	background-image: url(img/cv-bg-4.jpg);
+}
+
+.contact{
+	background-image: url(img/cv-bg-2.jpg);
+}
+
+h1{
+	margin: 0;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 4em;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: white;
+	border-radius: 50px;
+	border: 2px solid white;
+	padding: 30px;
+}
+
+#html5{
+	margin: 15px;
+	width: 180px;
+}
+
+@media all and (max-width: 1024px) {
+	body{
+		width: auto;
+		margin-left: 90px;
+	}
+	.navigation{
+		flex-direction: column;
+		align-items: left;
+		margin-left: -90px;
+		padding: 6px;
+		width: 90px;
+		height: 100%;
+		border-radius: 5px;
+		float: left;
+		position: fixed;
+	}
+	.boutonmenu{
+		margin: 4px;
+	}
+	.boutonmenu2{
+		margin: -4px 0 4px 0;
+		text-align: center;
+	}
+
+}
+table{
+	border-collapse: collapse;
+	color: white;
+	margin-top: 60px;
+}
+
+table caption{
+	margin-bottom: 10px;
+}
+
+th, td{
+	border: 2px solid white;
+	text-align: center;
+	padding: 6px 3px 6px 3px;
+}
+
+form{
+	color: white;
+	text-align: center;
+	margin-top: 60px;
+}
+
+.checkbox input{
+	display: none;
+}
+
+.checkbox .boxnewsletter{
+	background-color: #fff;
+	border: 3px solid #897D7F;
+	width: 9px; height: 9px;
+	display: inline-block;
+	vertical-align: middle;
+	border-radius: 8px;
+	position: relative;
+}
+
+input:checked + .boxnewsletter{
+	border-color: #E44D26;
+}
+
+input:checked + .boxnewsletter:after{
+	content: '';
+	display: block;
+	width: 5px; height: 5px;
+	background-color: #E44D26;
+	position: absolute;
+	top:2px; left: 2px;
+	border-radius: 2px;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+  <!-- Vos fichiers d'entête ci dessous, pour lier style.css et ajouter la webfont 'Open Sans'-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Mon CV</title>
+</head>
+<body>
+
+<!-- Créer une navagation ici   -->
+
+<nav class="navigation">
+	<a class="boutonmenu2">Audrey Rudeault</a>
+		<!--
+	<a href="#accueil" class="boutonmenu">Accueil</a>
+	<a href="#formation" class="boutonmenu">Formation</a>
+	<a href="#travaux" class="boutonmenu">Travaux</a>
+	<a href="#contact" class="boutonmenu">Contact</a>
+-->
+</nav>
+<!-- Créer la section accueil ici   -->
+<section class="accueil" id="accueil">
+	<h1>CV<br> HTML<br><img id="html5" src="img/html5.jpg"></h1>
+</section>
+<!-- Créer la section formation ici   -->
+<section class="formation" id="formation">
+	<h1>Formation</h1>
+</section>
+<!-- Créer la section travaux ici   -->
+<section class="travaux" id="travaux">
+	<h1>Travaux</h1>
+	<table>
+		<caption>Travaux réalisés pendant la formation</caption>
+		<thead>
+			<tr>
+				<th>Titre<a href=""></a></th>
+				<th>Vignette</th>
+				<th>Technologie / Technique utilisée</th>
+				<th>Date</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+	</table>
+</section>
+<!-- Créer la section contact ici   -->
+<section class="contact" id="contact">
+	<h1>Contact</h1>
+	<form method="post" action="traitement.php">
+		<p>
+			<label for="email">Votre email :</label>
+			<input type="email" name="email" id="email" placeholder="Ex : exemple@exemple.fr" />
+		</p>
+		<p>
+			<label for="message">Votre message :<br></label>
+			<textarea name="message" id="message" rows="10" cols="35"></textarea>
+		</p>
+		<p>
+			<label for="newsletter" class="checkbox">S'abonner à la newsletter
+			<input type="checkbox" id="newsletter" class="checkbox">
+			<span class="boxnewsletter"></span>
+			</label>
+		</p>
+		<p>
+			<input type="submit" value="Envoyer">
+		</p>
+	</form>
+</section>
+  <script type="text/javascript" src="index.js"></script>
+</body>
